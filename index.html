@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BOBLIX — скачать</title>
+<style>
+  :root{
+    --bg:#0f1117; --card:#181b24; --line:#252a36;
+    --txt:#e8eaf0; --dim:#9aa3b2; --acc:#5b8cff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--txt); min-height:100vh;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .wrap{width:100%;max-width:720px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:36px}
+  h1{font-size:44px;letter-spacing:-1px;margin-bottom:6px}
+  .sub{color:var(--dim);margin-bottom:26px}
+  .btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+  @media(max-width:560px){.btns{grid-template-columns:1fr}}
+  .dl{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:var(--acc);color:#fff;text-decoration:none;padding:18px 16px;
+    border-radius:12px;transition:filter .15s;
+  }
+  .dl.apk{background:#2f9e4f}
+  .dl:hover{filter:brightness(1.12)}
+  .dl .t{font-size:18px;font-weight:600}
+  .dl .s{font-size:13px;opacity:.85;margin-top:3px}
+  .meta{color:var(--dim);font-size:14px;text-align:center;margin-bottom:26px}
+  h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);margin-bottom:10px}
+  ul{list-style:none;display:grid;gap:8px}
+  li{padding:11px 14px;background:#131620;border:1px solid var(--line);border-radius:9px;font-size:15px}
+  li b{color:var(--acc);margin-right:8px}
+  .net{margin-top:26px;padding:18px;background:#131620;border:1px solid var(--line);border-radius:12px}
+  .net p{margin-bottom:9px;font-size:15px}
+  .net p:last-child{margin-bottom:0}
+  .net b{color:var(--acc)}
+  code{background:#0c0e14;padding:2px 7px;border-radius:5px;color:#8fb4ff;font-size:14px}
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:15px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--dim);font-weight:500;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+  td:first-child{color:var(--dim);width:32%}
+  .warn{margin-top:20px;padding:15px;border-left:3px solid #f0a020;background:#1a1710;
+        border-radius:0 8px 8px 0;font-size:14px;color:#e8d9b8}
+  .foot{margin-top:24px;text-align:center;font-size:13px;color:var(--dim)}
+  .foot a{color:var(--acc)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>BOBLIX</h1>
+    <p class="sub">Платформер с 8 режимами и сетевой игрой до 8 человек</p>
+
+    <div class="btns">
+      <a class="dl" href="https://github.com/dimacultasov6-star/boblix/releases/download/v1.2/BOBLIX.exe" download>
+        <span class="t">Скачать для Windows</span>
+        <span class="s">.exe &middot; 104 МБ</span>
+      </a>
+      <a class="dl apk" href="https://github.com/dimacultasov6-star/boblix/releases/download/v1.2/BOBLIX.apk" download>
+        <span class="t">Скачать для Android</span>
+        <span class="s">.apk &middot; 55 МБ</span>
+      </a>
+    </div>
+    <p class="meta">Один файл, установка не нужна &middot; версия 1.2</p>
+
+    <h2>Что внутри</h2>
+    <ul>
+      <li><b>8</b> режимов: паркур, арена, монетный дождь, лазеры, огонь, лёд, бомбы, вертушка</li>
+      <li><b>26</b> уровней с чекпоинтами, рекордами и монетами</li>
+      <li><b>Сенсорное управление</b> на телефоне: джойстик, прыжок, бег и обзор пальцем</li>
+      <li><b>Игра вдвоём и больше</b> по локальной сети</li>
+      <li><b>Магазин</b> с прокачкой и одеждой персонажа</li>
+    </ul>
+
+    <h2>Управление</h2>
+    <table>
+      <tr><th>Действие</th><th>Windows</th><th>Телефон</th></tr>
+      <tr><td>Ходьба</td><td><code>WASD</code></td><td>джойстик слева внизу</td></tr>
+      <tr><td>Прыжок</td><td><code>Space</code></td><td>зелёная кнопка справа внизу</td></tr>
+      <tr><td>Бег</td><td><code>Shift</code></td><td>синяя кнопка справа внизу</td></tr>
+      <tr><td>Камера</td><td>мышь</td><td>свайп справа от джойстика</td></tr>
+      <tr><td>Пауза</td><td><code>Esc</code></td><td>кнопка <code>II</code> сверху справа</td></tr>
+    </table>
+
+    <div class="net">
+      <p><b>Как играть с другом:</b> запусти у себя любой режим — игра сама откроет сервер и покажет твой IP.</p>
+      <p>Друг вводит этот IP в поле «Подключиться к другу» и жмёт кнопку.</p>
+      <p>В одной Wi-Fi сети работает сразу. Через интернет нужен проброс порта <code>27015</code> на роутере.</p>
+    </div>
+
+    <div class="warn">
+      <b>Ставишь Android впервые?</b> Телефон спросит разрешение на установку из неизвестных
+      источников — открой .apk, согласись, включи «Установка неизвестных приложений» для того
+      приложения, из которого открываешь файл, и вернись к установке.
+      Обновляешь старую версию — сначала удали её с телефона, потом ставь новую.
+      <br><br>
+      <b>Windows</b> может ругаться на файл — это нормально для игры, скачанной не из магазина.
+      Нажми «Подробнее» → «Выполнить в любом случае», или добавь файл в исключения Защитника.
+    </div>
+
+    <p class="foot">
+      Все сборки и история изменений — <a href="https://github.com/dimacultasov6-star/boblix/releases">на GitHub</a>
+    </p>
+  </div>
+</div>
+</body>
+</html>
