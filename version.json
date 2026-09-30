@@ -1,0 +1,7 @@
+{
+  "version": "1.3",
+  "notes": "Плавнее персонаж и ровнее края, а также автообновления. На Windows игра сама скачивает новую сборку и перезапускается, на Android открывает страницу с .apk.",
+  "windows": "https://github.com/dimacultasov6-star/boblix/releases/download/v1.3/BOBLIX.exe",
+  "android": "https://github.com/dimacultasov6-star/boblix/releases/download/v1.3/BOBLIX.apk",
+  "page": "https://dimacultasov6-star.github.io/boblix/"
+}
